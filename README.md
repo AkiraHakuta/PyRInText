@@ -183,7 +183,7 @@ SumatraPDF.exe -reuse-instance test01.pdf
 
 ### Change log  
 
-##### version 1.0 (2019/09/06)&nbsp;  Initial version  
+##### version 1.0 (2019/09/09)&nbsp;  Initial version  
 
 &nbsp;  
 
