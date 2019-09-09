@@ -1,0 +1,362 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.12.15)  9 SEP 2019 19:47
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**C:/Users/Akira/Documents/mingw64_code/antlr4_code/PyRInText-1.0/tests/test02ja.tex
+(c:/Users/Akira/Documents/mingw64_code/antlr4_code/PyRInText-1.0/tests/test02ja.tex
+LaTeX2e <2018-12-01>
+(c:/texlive/2018/texmf-dist/tex/latex/bxjscls/bxjsarticle.cls
+Document Class: bxjsarticle 2018/10/03 v1.9d BXJS document classes
+(c:/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count80
+\calc@Bcount=\count81
+\calc@Adimen=\dimen102
+\calc@Bdimen=\dimen103
+\calc@Askip=\skip41
+\calc@Bskip=\skip42
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count82
+\calc@Cskip=\skip43
+) (c:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+) (c:/texlive/2018/texmf-dist/tex/latex/bxjscls/bxjscompat.sty
+Package: bxjscompat 2018/10/03 v1.9d BXJS document classes
+) (c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+\stockwidth=\dimen104
+\stockheight=\dimen105
+\jsc@mpt=\dimen106
+\jsc@mmm=\dimen107
+\jsZw=\dimen108
+\jsc@smallskipamount=\skip44
+\Cht=\dimen109
+\Cdp=\dimen110
+\Cwd=\dimen111
+\Cvs=\dimen112
+\Chs=\dimen113
+\fullwidth=\dimen114
+ (c:/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+ (c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+) (c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count83
+\Gm@cntv=\count84
+\c@Gm@tempcnt=\count85
+\Gm@bindingoffset=\dimen115
+\Gm@wd@mp=\dimen116
+\Gm@odd@mp=\dimen117
+\Gm@even@mp=\dimen118
+\Gm@layoutwidth=\dimen119
+\Gm@layoutheight=\dimen120
+\Gm@layouthoffset=\dimen121
+\Gm@layoutvoffset=\dimen122
+\Gm@dimlist=\toks15
+)
+\c@part=\count86
+\c@section=\count87
+\c@subsection=\count88
+\c@subsubsection=\count89
+\c@paragraph=\count90
+\c@subparagraph=\count91
+\@abstractbox=\box27
+\c@figure=\count92
+\c@table=\count93
+\abovecaptionskip=\skip45
+\belowcaptionskip=\skip46
+\jsc@tocl@width=\dimen123
+\@lnumwidth=\dimen124
+\bibindent=\dimen125
+ (c:/texlive/2018/texmf-dist/tex/latex/bxwareki/bxwareki.sty
+Package: bxwareki 2018/10/01 v0.4
+\c@warekiyear=\count94
+ (c:/texlive/2018/texmf-dist/tex/latex/bxwareki/bxwareki-cd.def
+File: bxwareki-cd.def 2018/10/01 v0.4
+)) (c:/texlive/2018/texmf-dist/tex/latex/bxjscls/bxjsja-standard.def
+File: bxjsja-standard.def 2018/10/03 v1.9d BXJS document classes
+ (c:/texlive/2018/texmf-dist/tex/latex/bxjscls/bxjsja-minimal.def
+File: bxjsja-minimal.def 2018/10/03 v1.9d BXJS document classes
+\everypar=\toks16
+) (c:/texlive/2018/texmf-dist/tex/latex/bxcjkjatype/bxcjkjatype.sty
+Package: bxcjkjatype 2016/10/15 v0.3
+Package bxcjkjatype Info: Driver auto-detected: pdftex on input line 144.
+ (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+Package: CJK 2015/04/18 4.8.4
+ (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
+) (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box28
+) (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
+Package: CJKutf8 2015/04/18 4.8.4
+
+(c:/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (c:/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+)) (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJKspace.sty
+Package: CJKspace 2015/04/18 3.8.0
+) (c:/texlive/2018/texmf-dist/tex/latex/cjkpunct/CJKpunct.sty
+Package: CJKpunct 2016/05/14 4.8.4
+\CJKpunct@cnta=\count95
+\CJKpunct@cntb=\count96
+\CJKpunct@cntc=\count97
+\CJKpunct@cntd=\count98
+\CJKpunct@cnte=\count99
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2026 (decimal 8230)
+ (c:/texlive/2018/texmf-dist/tex/latex/cjkpunct/CJKpunct.spa)) (c:/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count100
+) (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+File: UTF8.bdg 2015/04/18 4.8.4
+))
+\jsKanjiSkip=\skip47
+\jsXKanjiSkip=\skip48
+))
+No file test02ja.aux.
+\openout1 = `test02ja.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* hratio: 1:1
+* vratio: 1:1
+* modes: includehead includefoot truedimen 
+* h-part:(L,W,R)=(71.70259pt, 454.10269pt, 71.70259pt)
+* v-part:(T,H,B)=(71.8282pt, 701.39043pt, 71.82822pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=453.10944pt
+* \textheight=634.0pt
+* \oddsidemargin=-0.07077pt
+* \evensidemargin=-0.07077pt
+* \topmargin=-5.2045pt
+* \headheight=20.0pt
+* \headsep=18.45792pt
+* \topskip=10.0pt
+* \footskip=28.45792pt
+* \marginparwidth=18.49426pt
+* \marginparsep=18.49426pt
+* \columnsep=18.49426pt
+* \skip\footins=16.0pt plus 5.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+) (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+Class bxjsarticle Info: Old font command '\bf' is used!!
+(bxjsarticle)           The first occurrence is on input line 5.
+LaTeX Font Info:    Font shape `C70/mc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 7.
+LaTeX Font Info:    Font shape `C70/mc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 7.
+LaTeX Font Info:    Font shape `C70/mc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 7.
+LaTeX Font Info:    Font shape `C70/mc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 7.
+Package CJKpunct Info: punctuation spaces for family 'mc' do not exist. Use family 'def' instead. on input line 7.
+LaTeX Font Info:    Font shape `C70/mc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 7.
+LaTeX Font Info:    Font shape `C70/mc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 7.
+LaTeX Font Info:    Font shape `C70/mc/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 7.
+ [1
+
+{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Class bxjsarticle Warning: Some old font commands were used in text:
+(bxjsarticle)                \bf
+(bxjsarticle)              You should note, that since 1994 LaTeX2e provides a
+(bxjsarticle)              new font selection scheme called NFSS2 with several
+(bxjsarticle)              new, combinable font commands. The class provides
+(bxjsarticle)              the old font commands only for compatibility.
+
+(./test02ja.aux) ) 
+Here is how much of TeX's memory you used:
+ 3956 strings out of 492616
+ 55120 string characters out of 6132767
+ 125077 words of memory out of 5000000
+ 7813 multiletter control sequences out of 15000+600000
+ 6119 words of font info for 23 fonts, out of 8000000 for 9000
+ 1146 hyphenation exceptions out of 8191
+ 38i,4n,23p,937b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u79.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u88.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u56.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u30.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u8a.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u67.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/ipaex-type1/ipxt1-u65.enc}<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u30.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u56.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u65.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u67.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/ipaex-type
+1/ipxm-r-u79.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u88.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/ipaex-type1/ipxm-r-u8a.pfb>
+Output written on test02ja.pdf (1 page, 60672 bytes).
+PDF statistics:
+ 58 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+

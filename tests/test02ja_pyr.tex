@@ -1,0 +1,18 @@
+% pyrintext.exe test02ja_pyr.tex
+\documentclass[pdflatex, jadriver=standard]{bxjsarticle}
+
+\begin{document}
+{\Large\bf PyRInText test02ja}\\
+
+\begin{pycode}
+import io,sys 
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+num = 10
+str = '日本語.jp~'
+print(str + 'を', num, '回表示します。\\par \\vspace{1mm}')
+for i in range(num):
+	print(str)
+\end{pycode}
+
+\end{document}
+
