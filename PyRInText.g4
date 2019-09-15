@@ -20,7 +20,5 @@ RCODE  : '\\begin{Rcode}' .*? '\\end{Rcode}' ;
 RC     : '\\Rc{' .*? '\\Rc}'  ;
 RCAT   : '\\Rcat{' .*? '\\Rcat}'  ;
 
-LINE_COMMENT : '%' ~[\r\n]*  -> skip ;
-COMMENT :   '/*' .*? '*/'    -> skip ;
 BKSL : [\\] ;
 OTHER :  ~[\\]+ ;
