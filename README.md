@@ -185,6 +185,9 @@ SumatraPDF.exe -reuse-instance test01.pdf
 
 ##### version 1.0 (2019/09/09)&nbsp;  Initial version  
 
+##### version 1.1 (2019/09/15)&nbsp;
+- modified `PyRInText.g4` for speedup   
+
 &nbsp;  
 
 *******  

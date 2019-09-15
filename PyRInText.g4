@@ -3,7 +3,7 @@ grammar PyRInText;
 
 stat : body*;
 
-body : ( pyr | SP | OTHER );
+body : ( pyr | BKSL | OTHER );
 
 pyr : PYCODE # pycode
     | PYC   # pyc
@@ -22,5 +22,5 @@ RCAT   : '\\Rcat{' .*? '\\Rcat}'  ;
 
 LINE_COMMENT : '%' ~[\r\n]*  -> skip ;
 COMMENT :   '/*' .*? '*/'    -> skip ;
-SP : [ ] ;
-OTHER :  . ;
+BKSL : [\\] ;
+OTHER :  ~[\\]+ ;

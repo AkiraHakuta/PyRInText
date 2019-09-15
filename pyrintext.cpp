@@ -12,7 +12,7 @@ using namespace std;
 #include <Windows.h>
 
 string sep = "###PyRInText2019###";
-string version = "1.0";
+string version = "1.1";
 
 string indent_sp(int size)
 {   
@@ -197,7 +197,7 @@ class SetTextCode : public PyRInTextListener{
         void exitBody(PyRInTextParser::BodyContext *ctx) override { 
             string buf;
             size_t ctx_type = ctx->getStart()->getType();
-            if (ctx_type == PyRInTextParser::SP or ctx_type == PyRInTextParser::OTHER)
+            if (ctx_type == PyRInTextParser::BKSL or ctx_type == PyRInTextParser::OTHER)
                 buf = ctx->getText();
             else
                 buf = getText(ctx->pyr());              
