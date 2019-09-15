@@ -1,5 +1,5 @@
 cat('###PyRInText2019###')
-cat(180)
+cat(21)
 cat('###PyRInText2019###')
 
 mcPi <- function(points){ # This is R comment
@@ -30,18 +30,18 @@ mcPi <- function(points){ # This is R comment
 }
 
 cat('###PyRInText2019###')
-cat(800)
+cat(91)
 cat('###PyRInText2019###')
 points<-2003
 cat('###PyRInText2019###')
-cat(836)
+cat(93)
 cat('###PyRInText2019###')
 cat(points)
 cat('###PyRInText2019###')
-cat(847)
+cat(95)
 cat('###PyRInText2019###')
 cat(mcPi(points))
 cat('###PyRInText2019###')
-cat(950)
+cat(103)
 cat('###PyRInText2019###')
 library(knitr);data(iris);data<-iris[c(41:60),];kable(data, "latex")
