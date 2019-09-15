@@ -74,7 +74,7 @@ $ cmake -G "MinGW Makefiles" ..
 $ mingw32-make.exe   
 
 This compiled binary file is in **release**.  
-Unzip [PyRInText-1.0-win64.zip](https://github.com/AkiraHakuta/PyRInText/releases/tag/v1.0).
+Unzip [PyRInText-1.1-win64.zip](https://github.com/AkiraHakuta/PyRInText/releases).
 </li>
 </ol>
 
