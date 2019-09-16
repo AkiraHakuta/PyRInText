@@ -480,7 +480,7 @@ int main(int argc, const char *args[])
     ifstream ifs;
     ifs.open(fname);
     if(ifs.fail()){
-        cerr << "Can't open " + fname << "\n";
+        cout << "Can't open " + fname << "\n";
         exit(0);
     }
     string basename = getFileName(fname);
