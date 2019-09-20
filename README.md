@@ -84,6 +84,8 @@ Unzip [PyRInText-1.1-win64.zip](https://github.com/AkiraHakuta/PyRInText/release
 
 Install [Python3](https://www.python.org/downloads/)  
 Add Python 3.7 to PATH check  
+or  
+Install [PyPy3.6 v7.1.1-beta](http://pypy.org/download.html) Windows binary (32bit)  
 </li>
 <li>
 
@@ -185,8 +187,10 @@ SumatraPDF.exe -reuse-instance test01.pdf
 
 ##### version 1.0 (2019/09/09)&nbsp;  Initial version  
 
-##### version 1.1 (2019/09/15)&nbsp;
-- modified `PyRInText.g4` for speedup   
+##### version 1.1 (2019/09/20)&nbsp;  
+- Modified `PyRInText.g4` for speedup   
+- Changed `Pyrintext.ini` to json file  
+- Supported PyPy   
 
 &nbsp;  
 
