@@ -5,6 +5,8 @@
 #include "PyRInTextLexer.h"
 #include "PyRInTextParser.h"
 #include "PyRInTextListener.h"
+
+#include "antlr4json.h"
 using namespace antlr4;
 using namespace tree;
 using namespace std;
@@ -14,37 +16,7 @@ using namespace std;
 string sep = "###PyRInText2019###";
 string version = "1.1";
 
-string indent_sp(int size)
-{   
-    string result = "";
-    for(int i = 0; i < size; i++)
-        result += " ";
-    return result;
-}
-
-
-string beautify_lisp_string(string in_string)
-{
-    int indent_size = 3;
-    int curr_indent = 0;
-    string out_string = string(1,in_string[0]);
-    string indent = "";
-    for (int i = 1; i < in_string.size(); i++)
-        if(in_string[i] == '(' and  in_string[i+1] != ' '){
-             curr_indent += indent_size;
-             out_string += '\n' + indent_sp(curr_indent) + '(';
-        }
-        else if(in_string[i] == ')'){
-            out_string += ')';
-            if(curr_indent > indent_size)
-                curr_indent -= indent_size;
-        }
-        else
-            out_string += in_string[i];
-     
-return out_string;
-}
-
+map<string, string> pl_cmd;
 
 
 class GetPyRCode : public PyRInTextListener{
@@ -333,7 +305,7 @@ string replaceString(string target, string from, string to)
 }
 
 
-void set_result_map(string code, string file_name, map<int, string>& result_map_1, string pl_name, string py_op = "")
+void set_result_map(string code, string file_name, map<int, string>& result_map_1, string pl_name)
 {
     if (code == "")
         return;
@@ -342,14 +314,7 @@ void set_result_map(string code, string file_name, map<int, string>& result_map_
     writeFile << code;
     writeFile.close();
     cout << "Output written on " <<  file_name << "\n";
-
-    string com_str;
-    if (pl_name == "python.exe")
-        com_str = pl_name + " " + py_op + " " + file_name; 
-    else{
-        com_str =  pl_name + " " + file_name;
-        //cout << com_str << "\n";
-    }
+    string com_str = pl_cmd[pl_name] + file_name; 
     string result;
     int exitCode;
     vector<string> result_vec; 
@@ -367,7 +332,7 @@ void set_result_map(string code, string file_name, map<int, string>& result_map_
         for (int j = 1; j < result_vec.size(); j += 2){
             string value = result_vec[j+1];        
             size_t strLen = value.length();
-            if (pl_name == "python.exe")
+            if (pl_name == "Python")
                 value = value.substr(1, strLen - 2);
             else
                 value = value.substr(0, strLen);     
@@ -416,6 +381,24 @@ bool checkFileExistence(const string& str)
 }
 
 
+string getLanguageCmd(map<unsigned int,JSON_NODE> &ajson, string lang)
+{
+    unsigned int lang_addr = getJasonNodeKeyAddr(ajson, lang);
+    string lcmd = "";
+    if (lang_addr == 0)        
+        return "None";
+    //cout << lang_addr << "\n";
+    JSON_NODE* jn = jasonNodeWalk(ajson, ajson[lang_addr], "cccc");
+    for ( ; ; jn = &ajson[jn->sibling_addr]){
+            lcmd += jasonNodeWalk(ajson, ajson[jn->my_addr], "c")->atom + " ";
+        if (jn->sibling_addr == 0) break;
+    }
+    if (lcmd == "")
+        return "None";
+    return lcmd;
+}
+
+
 int main(int argc, const char *args[])
 {  
     cmdline::parser cp;
@@ -455,25 +438,19 @@ int main(int argc, const char *args[])
     
     cout << "This is pyrintext " + version << "\n";    
     
-    string Rscript, Rscript_encoding, Python_option;
+    //string Rscript, Rscript_encoding, Python_option;
     string currpath = getcurrpath();
     string inifilePath =  currpath + "\\..\\pyrintext.ini";
     if (!checkFileExistence(inifilePath)){
-        cerr << inifilePath << " does not exist" <<"\n";
+        cerr << inifilePath << " does not exist" << "\n";
         return 0;
     }
-    Python_option = GetConfigString(inifilePath, "Python", "option");   
-    Rscript = GetConfigString(inifilePath, "Rscript", "fullpath");   
-    if(!checkFileExistence(Rscript)){
-        cerr << Rscript << " does not exist" <<"\n";
-        Rscript = "None";
-    }
-    else
-        Rscript += " ";      
-    Rscript_encoding = GetConfigString(inifilePath, "Rscript", "encoding");
-    if (Rscript_encoding != "")
-        Rscript_encoding = "--encoding=" + Rscript_encoding;
-      
+
+    map<unsigned int,JSON_NODE> ajson = antlr4json(inifilePath);
+    //dump_antlr4json(ajson);
+    pl_cmd["Python"] = getLanguageCmd(ajson, "Python");
+    pl_cmd["Rscript"] = getLanguageCmd(ajson, "Rscript");
+    
     ParseTreeProperty<string>* pycd = new ParseTreeProperty<string>();   
     ParseTreeProperty<string>* Rcd = new ParseTreeProperty<string>(); 
 
@@ -529,9 +506,10 @@ int main(int argc, const char *args[])
     //cout << "\nR code:\n" << pyrcode->getRC(tree) << endl;
 
     map<int, string> result_map;
-    set_result_map(pyct + pyrcode->getPYC(tree) , pyfile, result_map, "python.exe", Python_option);
-    if (Rscript != "None")
-        set_result_map(rct + pyrcode->getRC(tree), Rfile, result_map, Rscript + Rscript_encoding);/**/
+    if (pl_cmd["Python"] != "None")
+        set_result_map(pyct + pyrcode->getPYC(tree) , pyfile, result_map, "Python");
+    if (pl_cmd["Rscript"] != "None")
+        set_result_map(rct + pyrcode->getRC(tree), Rfile, result_map, "Rscript");
 
     ParseTreeProperty<string>* create_file_cd = new ParseTreeProperty<string>();
     SetTextCode *create_code = new SetTextCode(create_file_cd, &result_map);

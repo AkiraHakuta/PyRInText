@@ -21,6 +21,10 @@ find_package(ANTLR REQUIRED)
 antlr_target(PyRInTextGrammar PyRInText.g4 LISTENER)
 include_directories(${ANTLR_PyRInTextGrammar_OUTPUT_DIR})
 
-add_executable(pyrintext pyrintext.cpp ${ANTLR_PyRInTextGrammar_CXX_OUTPUTS})
+antlr_target(JsonGrammar JSON.g4 LISTENER)
+include_directories(${ANTLR_JsonGrammar_OUTPUT_DIR})
+
+add_executable(pyrintext pyrintext.cpp ${ANTLR_PyRInTextGrammar_CXX_OUTPUTS}
+							antlr4json.cpp ${ANTLR_JsonGrammar_CXX_OUTPUTS})
 target_link_libraries(pyrintext antlr4_static)
 # target_link_libraries(pyrintext -static -lstdc++ -lgcc -lwinpthread antlr4_static)
