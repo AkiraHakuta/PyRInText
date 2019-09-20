@@ -1,5 +1,5 @@
 // Derived from http://json.org
-// find_package(ANTLR_CYGWIN64 REQUIRED)
+// find_package(ANTLR REQUIRED)
 // antlr_target(JsonGrammar JSON.g4 LISTENER)
 
 grammar JSON;
