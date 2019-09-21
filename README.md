@@ -91,7 +91,7 @@ Install [PyPy3.6 v7.1.1-beta](http://pypy.org/download.html) Windows binary (32b
 
 Install [R](https://www.r-project.org)  
 e.g. install folder C:\R-3.6.1  
-Write the full path of Rscript.exe to `pyrintext.ini`   
+Write the full path and option of Rscript.exe to `pyrintext.ini`   
 Install package knitr for  tests/test01_pyr.tex  
 </li>
 <li>
