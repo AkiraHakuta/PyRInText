@@ -1,6 +1,6 @@
 ## PyRInText  
 
-PyRInText is a tool that runs Python and R code embedded in text file,   
+PyRInText is a tool that runs Python (or PyPy) and R code embedded in text file,   
 and makes the new text file that is replaced with its output.
 
 ### Building PyRInText (Windows only)   
