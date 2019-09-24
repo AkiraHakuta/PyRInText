@@ -187,7 +187,7 @@ SumatraPDF.exe -reuse-instance test01.pdf
 
 ##### version 1.0 (2019/09/09)&nbsp;  Initial version  
 
-##### version 1.1 (2019/09/20)&nbsp;  
+##### version 1.1 (2019/09/24)&nbsp;  
 - Modified `PyRInText.g4` for speedup   
 - Changed `Pyrintext.ini` to json file  
 - Supported PyPy   
