@@ -169,7 +169,7 @@ class SetTextCode : public PyRInTextListener{
         void exitBody(PyRInTextParser::BodyContext *ctx) override { 
             string buf;
             size_t ctx_type = ctx->getStart()->getType();
-            if (ctx_type == PyRInTextParser::BKSL or ctx_type == PyRInTextParser::OTHER)
+            if (ctx_type == PyRInTextParser::OTHERS)
                 buf = ctx->getText();
             else
                 buf = getText(ctx->pyr());              

@@ -1,5 +1,5 @@
 print('###PyRInText2019###')
-print(12)
+print(7)
 print('###PyRInText2019###')
 
 import io,sys 
