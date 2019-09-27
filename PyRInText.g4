@@ -3,7 +3,7 @@ grammar PyRInText;
 
 stat : body*;
 
-body : ( pyr | OTHERS );
+body : ( pyr | others );
 
 pyr : PYCODE # pycode
     | PYC   # pyc
@@ -13,6 +13,8 @@ pyr : PYCODE # pycode
     | RCAT  # rcat
     ;
 
+others : OTHER+ ;
+
 PYCODE : '\\begin{pycode}' .*? '\\end{pycode}' ;
 PYC    : '\\pyc{' .*? '\\pyc}'  ;
 PYP    : '\\pyp{' .*? '\\pyp}'  ;
@@ -20,4 +22,5 @@ RCODE  : '\\begin{Rcode}' .*? '\\end{Rcode}' ;
 RC     : '\\Rc{' .*? '\\Rc}'  ;
 RCAT   : '\\Rcat{' .*? '\\Rcat}'  ;
 
-OTHERS : .(~[\\]*);
+OTHER : .(~[\\]*);
+

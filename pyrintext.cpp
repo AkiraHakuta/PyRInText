@@ -134,6 +134,9 @@ class GetPyRCode : public PyRInTextListener{
             setRC(ctx, index_str + buf);
         }
 
+        void enterOthers(PyRInTextParser::OthersContext * /*ctx*/) override { }
+        void exitOthers(PyRInTextParser::OthersContext * /*ctx*/) override { }
+
         void enterEveryRule(antlr4::ParserRuleContext * /*ctx*/) override { }
         void exitEveryRule(antlr4::ParserRuleContext * /*ctx*/) override { }
         void visitTerminal(antlr4::tree::TerminalNode * /*node*/) override { }
@@ -168,9 +171,10 @@ class SetTextCode : public PyRInTextListener{
         void enterBody(PyRInTextParser::BodyContext * /*ctx*/) override { }
         void exitBody(PyRInTextParser::BodyContext *ctx) override { 
             string buf;
-            size_t ctx_type = ctx->getStart()->getType();
-            if (ctx_type == PyRInTextParser::OTHERS)
+            if (ctx->others()){
                 buf = ctx->getText();
+                //cout << "others():" << buf << "\n";
+            }
             else
                 buf = getText(ctx->pyr());              
             setText(ctx, buf);
@@ -223,6 +227,9 @@ class SetTextCode : public PyRInTextListener{
             if(itr != result_map->end())
                 setText(ctx, result_map->at(index));
         }
+
+        void enterOthers(PyRInTextParser::OthersContext * /*ctx*/) override { }
+        void exitOthers(PyRInTextParser::OthersContext * /*ctx*/) override { }
 
         void enterEveryRule(antlr4::ParserRuleContext * /*ctx*/) override { }
         void exitEveryRule(antlr4::ParserRuleContext * /*ctx*/) override { }
