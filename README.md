@@ -43,9 +43,9 @@ file cannot create directory: C:/Program Files
 
 You change `cmake_install.cmake` as follows  
 old : set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/LIBANTLR4")  
-new : set(CMAKE_INSTALL_PREFIX "C:/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/usr/local") 
+new : set(CMAKE_INSTALL_PREFIX "C:/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/local") 
 
-Copy the `cmake` folder to the `..mingw64/usr/local`  folder 
+Copy the `cmake` folder to the `..mingw64/local`  folder 
 </li>
 <li>
 
