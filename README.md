@@ -136,6 +136,7 @@ or
 $ C:/.../pyrintext.exe test01_pyr.tex -p ans=0
 ```
 Compile `test01.tex` with pdflatex  
+<img src="tests/test01.jpg">  
 </li>
 <li>
 
